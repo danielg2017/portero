@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portero</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
+    <script defer src="portero.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="mov">
+
+            <div class="selector">
+                <button id="btn_piso" class="select-button" onclick="seleccionar('piso')">
+                    Piso
+                </button>
+                <div id="piso" class="select">&nbsp;</div>
+                <button id="btn_dpto" class="select-button" onclick="seleccionar('dpto')">
+                    Dpto
+                </button>
+                <div id="dpto" class="select">&nbsp;</div>
+            </div>
+
+            <div class="num">
+                <input type="button" value="1" onclick="marcar(1)" />
+                <input type="button" value="2" onclick="marcar(2)" />
+                <input type="button" value="3" onclick="marcar(3)" />
+                <br />
+                <input type="button" value="4" onclick="marcar(4)" />
+                <input type="button" value="5" onclick="marcar(5)" />
+                <input type="button" value="6" onclick="marcar(6)" />
+                <br />
+                <input type="button" value="7" onclick="marcar(7)" />
+                <input type="button" value="8" onclick="marcar(8)" />
+                <input type="button" value="9" onclick="marcar(9)" />
+            </div>
+            <input type="button" id="cero" value="0" onclick="marcar(0)" />
+            <br />
+            <input type="button" id="llamar" value="Llamar" onclick="llamar()" />
+            <br />
+            <input type="button" id="borrar" value="Borrar" onclick="borrar()" />
+        </div>
+        <div id="visor" class="visor">&nbsp;</div>
+    </section>
+</body>
+
+</html>
